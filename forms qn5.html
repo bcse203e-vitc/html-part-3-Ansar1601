@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Form</title>
+  <style>
+    body {
+      background-color: lightseagreen;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Booking Form</h1>
+
+
+    <label for="name"><b>Full name:</b></label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+
+    <label for="contact">Contact Information:</label><br>
+    <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" placeholder="Enter ur phn number" required><br><br>
+
+
+    <label for="destination">Destination:</label><br>
+    <select id="destination" name="destination" required>
+      <option value="">--Select Destination--</option>
+      <option value="paris">Paris</option>
+      <option value="newyork">New York</option>
+      <option value="tokyo">Tokyo</option>
+      <option value="dubai">Dubai</option>
+      <option value="sydney">Sydney</option>
+    </select><br><br>
+
+
+    <label for="travel-date">Travel Date:</label><br>
+    <input type="date" required><br><br>
+
+   
+    <label for="travelers">Number of Travelers:</label><br>
+    <input type="number" id="travelers" required><br><br>
+
+
+    <label>Travel Class:</label><br>
+    <input type="radio" id="economy" name="class" value="economy" checked required>
+    <label for="economy">Economy</label><br>
+    <input type="radio" id="business" name="class" value="business">
+    <label for="business">Business</label><br>
+    <input type="radio" id="first" name="class" value="first">
+    <label for="first">First Class</label><br><br>
+
+  
+    <input type="checkbox" id="insurance" name="insurance" value="yes">
+    <label for="insurance">Opt for Travel Insurance</label><br><br>
+
+ 
+    <label for="cost">Total Cost (in ₹):</label><br>
+    <input type="text" id="cost" name="cost" readonly><br><br>
+
+    <label>23MIS1051</label>
+

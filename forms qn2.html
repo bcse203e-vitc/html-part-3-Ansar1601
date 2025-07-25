@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Event Registration Form</title>
+ <style>
+    body{
+        background-color:pink;
+    }
+ </style>
+</head>
+<body>
+    
+ <h1>Online Event Registration</h1>
+ <form action="/register" method="post">
+
+    <!---for full name-->
+   
+   <label for="full-name">Full Name:</label><br>
+   <input type="text" id="full-name" name="full-name" placeholder="Enter ur name" required><br><br>
+
+   <!--for email-->
+
+   <label for="email">Email:</label><br>
+   <input type="email" id="email" name="email" placeholder="urname@gmail.com" required><br><br>
+
+   <!--for phn number-->
+ 
+   <label for="phone">Phone Number:</label><br>
+   <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="enter ur number" required><br><br>
+
+   <!-- for gender-->
+  
+   <label>Gender:</label><br>
+   <input type="radio" id="male" name="gender" value="Male" required>
+   <label for="male">Male</label><br>
+   <input type="radio" id="female" name="gender" value="Female">
+   <label for="female">Female</label><br>
+   <input type="radio" id="other" name="gender" value="Other">
+   <label for="trans">Trans</label><br>
+   <input type="radio" id="other" name="gender" value="Other">
+   <label for="other">Other</label><br><br>
+
+   <!--for age-->
+
+   <label for="age-group">Age Group:</label><br>
+   <select id="age-group" name="age-group" required>
+     <option value="">--Select Age Group--</option>
+     <option value="under-18">Under 18</option>
+     <option value="18-25">18–25</option>
+     <option value="26-35">26–35</option>
+     <option value="36-50">36–50</option>
+     <option value="51+">51+</option>
+   </select><br><br>
+
+   <!--interests-->
+   
+   <label>Topics of Interest:</label><br>
+   <input type="checkbox" id="music" name="interests" value="music">
+   <label for="music">Music</label><br>
+   <input type="checkbox" id="health" name="interests" value="Health">
+   <label for="health">Health</label><br>
+   <input type="checkbox" id="education" name="interests" value="Education">
+   <label for="education">Education</label><br>
+   <input type="checkbox" id="art" name="interests" value="Art">
+   <label for="art">Art</label><br><br>
+
+   <!--comments-->
+  
+   <label for="comments">Additional Comments:</label><br>
+   <textarea id="comments" name="comments" rows="4" cols="25" placeholder="enter ur comments here :)"></textarea><br><br>
+
+   <!--for submit button-->
+   
+   <button type="submit">Register</button><br><br>
+   <label>23MIS1051</label><br>
+ </form>
+</body>
+</html>

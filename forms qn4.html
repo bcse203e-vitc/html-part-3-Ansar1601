@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Health Survey Form</title>
+ <style>
+    body {
+        background-color:lightgoldenrodyellow;
+        
+    }
+ </style>
+</head>
+<body>
+
+ <h1>Health Survey Form</h1>
+ <form action="/submit-health-survey" method="post">
+
+   
+   <label for="name">Name:</label><br>
+   <input type="text" id="name" name="name" required><br><br>
+
+   
+   <label for="age">Age:</label><br>
+   <input type="number" id="age" name="age" min="0"  required><br><br>
+
+   
+   <label>Gender:</label><br>
+   <input type="radio" id="male" name="gender" value="Male" required>
+   <label for="male">Male</label><br>
+   <input type="radio" id="female" name="gender" value="Female">
+   <label for="female">Female</label><br>
+   <input type="radio" id="other" name="gender" value="Other">
+   <label for="other">Other</label><br><br>
+
+
+   <label for="height">Height (in cm):</label><br>
+   <input type="number" id="height" name="height" required><br><br>
+
+   
+   <label for="weight">Weight (in kg):</label><br>
+   <input type="number" id="weight" name="weight" required><br><br>
+
+   
+   <label>Lifestyle Habits:</label><br>
+   <input type="checkbox" id="smoking" name="lifestyle" value="Smoking">
+   <label for="smoking">Smoking</label><br>
+   <input type="checkbox" id="alcohol" name="lifestyle" value="Alcohol">
+   <label for="alcohol">Alcohol Consumption</label><br>
+   <input type="checkbox" id="exercise" name="lifestyle" value="Exercise">
+   <label for="exercise">Regular Exercise</label><br>
+   <input type="checkbox" id="junkfood" name="lifestyle" value="Junk Food">
+   <label for="junkfood">Frequent Junk Food</label><br><br>
+
+   
+   <label for="diet">Dietary Preference:</label><br>
+   <select id="diet" name="diet" required>
+     <option value="">--Select--</option>
+     <option value="Vegetarian">Vegetarian</option>
+     <option value="Non-Vegetarian">Non-Vegetarian</option>
+     <option value="Vegan">Vegan</option>
+     <option value="Others">Others</option>
+   </select><br><br>
+
+   
+   <label for="activity">Activity Level:</label><br>
+   <select id="activity" name="activity" required>
+     <option value="">--Select--</option>
+     <option value="Sedentary">Sedentary</option>
+     <option value="Moderate">Moderate</option>
+     <option value="Active">Active</option>
+   </select><br><br>
+
+   
+   <label for="concerns">Health Concerns (Optional):</label><br>
+   <textarea id="concerns" name="concerns" rows="4" cols="25" placeholder="Mention any health issues..."></textarea><br><br>
+
+   <!-- Submit Button -->
+   <button type="submit">Submit Survey</button><br><br>
+   <label>23MIS1051</label><br>
+ </form>
+
+</body>
+</html>
